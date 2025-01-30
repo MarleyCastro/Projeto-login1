@@ -27,15 +27,14 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px black;
-
     transition: width .3s , height .3s;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -69,13 +68,36 @@ div.campo > label {
     display: none;
 }
 
+div.campo >.material-icons{ 
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: #ffffff;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-9px); /* sempre na última linha*/
+}
+
+div.campo > input:focus-within{
+    background-color: #025E73;
+    color: #ffffff;
+}
+
 form > div.campo{
     background-color: #011F26;
+    border: 2px solid #011F26;
     color: white;
     display: block;
     height: 40px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
@@ -124,7 +146,9 @@ form > a.botao:hover{
     }
 
     section#login{
-        width: 80vw;
+        width: 950px;
+        height: 350px;
+
     }
 
     section#login > div#imagem{
@@ -139,8 +163,8 @@ form > a.botao:hover{
     }
 
     div#formulario > p{
-        font-size: 2em;
-        
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
 
@@ -151,6 +175,7 @@ form > a.botao:hover{
     
     section#login { 
     width: 80vw; 
+    height: 280px;
     }
 
     section#login > div#imagem{
