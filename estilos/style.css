@@ -61,11 +61,61 @@ div#formulario > h1{
     margin-bottom: 10px;
 }
 
+div#formulario > p{
+    font-size: 0.8em;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > div.campo{
+    background-color: #011F26;
+    color: white;
+    display: block;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
 div#formulario{
     font-size: 0.9em;
 }
 
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    height: 40px;
+    width: 100%;
+    background-color: #025E73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+form > input[type=submit]:hover{
+    background-color: #1a89a2;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    border: 1px solid #025E73;
+    border-radius: 5px;
+    color:#025E73;
+    transition: .6s;
+}
+
+form > a.botao:hover{
+    background-color: #025E73;
+    color: white;
+}
 
 
 @media screen and (min-width: 992px) {
