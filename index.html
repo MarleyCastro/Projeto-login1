@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>tela de login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                
+            </div>
+            <div id="formulario">
+                <h1>login</h1>
+                <p>Seja bem vindo novamenta a página de login</p>
+                <form action="login.php" method="post" autocomplete="off">
+                    <div class="campo">
+                        <span class="material-icons orange600">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu Email" autocomplete="email" maxlength="30" required>
+                        <label for="ilogin">login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons orange600">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha" autocomplete="current-password" required maxlength="20">
+                        <label for="isenha">senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        esqueci a senha<span class="material-icons orange600">mail</span>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
